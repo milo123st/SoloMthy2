@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloMyth | VFX & Editing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== زر الترجمة ===== -->
+    <div class="lang-switch">
+        <button id="langBtn" class="lang-btn">
+            <span id="langText">English</span>
+            <i class="fas fa-language"></i>
+        </button>
+    </div>
+
+    <!-- ===== الصفحة الرئيسية ===== -->
+    <div id="page-home" class="page active-page">
+        <div class="container">
+            <div class="logo-wrapper">
+                <img src="images/logo.png" alt="SoloMyth Logo" class="logo" id="mainLogo">
+            </div>
+
+            <h1 class="glitch-text">
+                <span class="highlight" data-i18n="hi">Hi Im, SoloMyth</span></h1>
+
+            <p class="role" data-i18n="role"><span class="white-highlight">VFX</span> Artist, <span class="white-highlight">Video</span> Editor, Animator</p>
+
+            <!-- ===== الزرار فوق ===== -->
+            <div class="button-wrapper">
+                <button class="wish-btn" id="contactBtn" data-i18n="wish">Wish and Believe I will Achieve</button>
+            </div>
+
+            <!-- ===== العملاء (صور + اسم + اشتراكات) يتحركوا من اليمين للشمال ===== -->
+            <div class="clients-section">
+                <p class="clients-label" data-i18n="clientsLabel">Clients & Collaborators</p>
+                <div class="clients-scroll-wrapper">
+                    <div class="clients-track">
+                        <!-- 1. 7ikayat Maro -->
+                        <div class="client-item">
+                            <img src="images/7ikayat_Maro_2.6M.jpg" alt="7ikayat Maro" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">7ikayat Maro</span>
+                                <span class="client-subs">+2.6M</span>
+                            </div>
+                        </div>
+                        <!-- 2. Alhassan Adel -->
+                        <div class="client-item">
+                            <img src="images/Alhassan_Adel_12.8M.jpg" alt="Alhassan Adel" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">Alhassan Adel</span>
+                                <span class="client-subs">+12.8M</span>
+                            </div>
+                        </div>
+                        <!-- 3. Egy Otaku -->
+                        <div class="client-item">
+                            <img src="images/Egy_Otaku_600K.jpg" alt="Egy Otaku" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">Egy Otaku</span>
+                                <span class="client-subs">+600K</span>
+                            </div>
+                        </div>
+                        <!-- 4. Gaming Center -->
+                        <div class="client-item">
+                            <img src="images/Gaming_Center_2.6M.jpg" alt="Gaming Center" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">Gaming Center</span>
+                                <span class="client-subs">+2.6M</span>
+                            </div>
+                        </div>
+                        <!-- 5. MagnumL -->
+                        <div class="client-item">
+                            <img src="images/MagnumL_190K.jpg" alt="MagnumL" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">MagnumL</span>
+                                <span class="client-subs">+190K</span>
+                            </div>
+                        </div>
+                        <!-- 6. Omar Aburobb -->
+                        <div class="client-item">
+                            <img src="images/Omar_Aburobb_3.7M.jpg" alt="Omar Aburobb" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">Omar Aburobb</span>
+                                <span class="client-subs">+3.7M</span>
+                            </div>
+                        </div>
+                        <!-- تكرار المجموعة عشان الحركة مستمرة -->
+                        <div class="client-item">
+                            <img src="images/7ikayat_Maro_2.6M.jpg" alt="7ikayat Maro" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">7ikayat Maro</span>
+                                <span class="client-subs">+2.6M</span>
+                            </div>
+                        </div>
+                        <div class="client-item">
+                            <img src="images/Alhassan_Adel_12.8M.jpg" alt="Alhassan Adel" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">Alhassan Adel</span>
+                                <span class="client-subs">+12.8M</span>
+                            </div>
+                        </div>
+                        <div class="client-item">
+                            <img src="images/Egy_Otaku_600K.jpg" alt="Egy Otaku" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">Egy Otaku</span>
+                                <span class="client-subs">+600K</span>
+                            </div>
+                        </div>
+                        <div class="client-item">
+                            <img src="images/Gaming_Center_2.6M.jpg" alt="Gaming Center" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">Gaming Center</span>
+                                <span class="client-subs">+2.6M</span>
+                            </div>
+                        </div>
+                        <div class="client-item">
+                            <img src="images/MagnumL_190K.jpg" alt="MagnumL" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">MagnumL</span>
+                                <span class="client-subs">+190K</span>
+                            </div>
+                        </div>
+                        <div class="client-item">
+                            <img src="images/Omar_Aburobb_3.7M.jpg" alt="Omar Aburobb" class="client-logo">
+                            <div class="client-info">
+                                <span class="client-name">Omar Aburobb</span>
+                                <span class="client-subs">+3.7M</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== الجملة الكبيرة تحت خالص ===== -->
+            <div class="description-bottom">
+                <p data-i18n="description">
+                    Mastering the art of the '<span class="white-highlight">unbelievable</span>.' 
+                    I create immersive visual worlds where advanced <span class="white-highlight">VFX</span> 
+                    and rhythmic <span class="white-highlight">storytelling</span> collide, 
+                    making even the most impossible <span class="white-highlight">imagination</span> 
+                    feel undeniably real.
+                </p>
+            </div>
+
+            <!-- ===== قسم المشاهدات ===== -->
+            <div class="views-section">
+                <p class="views-label" data-i18n="viewsLabel">Total Views</p>
+                <div class="views-counter">
+                    <span id="viewsCount">0</span><span class="views-unit">M</span>
+                </div>
+            </div>
+
+            <!-- ===== قسم زوار الموقع الجديد ===== -->
+            <div class="visitors-section">
+                <p>👥 زوار الموقع</p>
+                <div class="visitors-number" id="siteVisitors">0</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== صفحة المهارات ===== -->
+    <div id="page-skills" class="page">
+        <div class="container skills-container">
+            <h1 class="glitch-text"> <span class="highlight" data-i18n="skills">My Skills</span></h1>
+            
+            <div class="skills-list">
+                <!-- AE 300% -->
+                <div class="skill-row">
+                    <div class="skill-label">
+                        <i class="fas fa-film"></i>
+                        <span>After Effects</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 300%;"></div>
+                        </div>
+                        <span class="skill-percent">300%</span>
+                    </div>
+                </div>
+
+                <!-- PR 100% -->
+                <div class="skill-row">
+                    <div class="skill-label">
+                        <i class="fas fa-video"></i>
+                        <span>Premiere Pro</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 100%;"></div>
+                        </div>
+                        <span class="skill-percent">100%</span>
+                    </div>
+                </div>
+
+                <!-- PS 90% -->
+                <div class="skill-row">
+                    <div class="skill-label">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Photoshop</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                </div>
+
+                <!-- Blender 60% -->
+                <div class="skill-row">
+                    <div class="skill-label">
+                        <i class="fas fa-cube"></i>
+                        <span>Blender</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%;"></div>
+                        </div>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                </div>
+
+                <!-- FL Studio 90% -->
+                <div class="skill-row">
+                    <div class="skill-label">
+                        <i class="fas fa-music"></i>
+                        <span>FL Studio</span>
+                    </div>
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== صفحة أعمالي (13 فيديو) ===== -->
+    <div id="page-work" class="page">
+        <div class="container work-container">
+            <h1 class="glitch-text"><span class="highlight" data-i18n="work">My Work</span></h1>
+            <p class="role" style="color: #aaa; font-size: 1rem; margin-bottom: 2rem;">VFX & Motion Reel</p>
+            
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="DanDaDan_Magnum -Final-_1.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>DanDaDan Magnum</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="هل رح اقدر ابني المسجد ؟_SM_Edit_1.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>هل رح اقدر ابني المسجد ؟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="Yato Japanees_1.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>Yato Japanees</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="Visual_1.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>Visual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="Tengen Prins of Hashira_Magnum -Finished-.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>Tengen Prins of Hashira</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="Maro_1.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>Maro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="Last War -SFX OK-_1.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>Last War</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="Karma_VID_1.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>Karma</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="Kaneki Rap -Edited-_1.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>Kaneki Rap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="Impact 1_1.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>Impact 1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="Hokage Intro_1_1.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>Hokage Intro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="Finished Yoriichi_1.webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>Finished Yoriichi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="video-wrapper">
+                        <video src="Fatal vid_1 (1).webm" autoplay loop muted playsinline preload="metadata"></video>
+                        <div class="video-overlay">
+                            <span>Fatal vid</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== صفحة Only SoloMyth (محمية بكلمة مرور) ===== -->
+    <div id="page-only" class="page">
+        <div class="container only-container">
+            <div class="lock-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <h1 class="glitch-text"><span class="highlight" data-i18n="onlyTitle">Only SoloMyth</span></h1>
+            <p class="role" style="color: #aaa; font-size: 1rem; margin-bottom: 2rem;" data-i18n="onlyPass">Enter password to access exclusive content</p>
+            
+            <div class="password-form">
+                <input type="password" id="passwordInput" placeholder="Enter Password" class="password-input">
+                <button id="unlockBtn" class="wish-btn" data-i18n="unlock">Unlock</button>
+            </div>
+            
+            <div id="errorMessage" style="color: #ff4444; margin-top: 1rem; display: none;" data-i18n="wrongPass">Wrong password!</div>
+            
+            <div id="onlyContent" style="display: none; margin-top: 2rem;">
+                <div class="only-content-box">
+                    <h2 style="color: #B7EC7B; margin-bottom: 1.5rem;" data-i18n="specialMsg">🌟 Special Message</h2>
+                    
+                    <div style="color: #fff; line-height: 2; text-align: center; font-size: 0.95rem;">
+                        <p style="margin-bottom: 1rem;" data-i18n="thanks1">
+                            أولاً، حابب أشكر <strong style="color: #B7EC7B;">SoloMyth</strong> إنه وثق فيي إني أعمل له الموقع.
+                        </p>
+                        <p style="margin-bottom: 1rem;" data-i18n="thanks2">
+                            ثانياً، شكراً لأن الموقع عجبك.
+                        </p>
+                        <p style="margin-bottom: 1rem;" data-i18n="upcoming">
+                            عندك بعض الحاجات اللي هتحتاجها فيما بعد:
+                        </p>
+                        <ul style="list-style: none; padding: 0; text-align: center; margin-bottom: 1rem;">
+                            <li style="margin-bottom: 0.5rem;" data-i18n="update">✅ <span style="color: #B7EC7B;">تحديث مدى الحياة مجاني</span></li>
+                            <li style="margin-bottom: 0.5rem;" data-i18n="version">✅ <span style="color: #B7EC7B;">الإصدار الحالي: 0.4</span> (التحديث الثالث)</li>
+                            <li style="margin-bottom: 0.5rem;" data-i18n="info">✅ <span style="color: #B7EC7B;">معلومات خطيرة</span> هتتم إنشاؤها في الصفحة دي بعدين (زي عدد الزيارات وكم واحد استخدم الموقع)</li>
+                            <li style="margin-bottom: 0.5rem;" data-i18n="gifts">✅ <span style="color: #B7EC7B;">هدايا</span> لك وللمتعاونين معك هتضاف فيما بعد</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-size: 1.2rem;" data-i18n="final">
+                            وبس، دي كل حاجة 🫡
+                        </p>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <button id="logoutBtn" class="wish-btn" style="background: #ff4444; box-shadow: 0 4px 12px rgba(255,68,68,0.3);" data-i18n="logout">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== صفحة التواصل ===== -->
+    <div id="page-contact" class="page">
+        <div class="container contact-container">
+            <h1 class="glitch-text" data-i18n="contactTitle">كل وسائل التواصل مع <span class="highlight">SoloMyth</span></h1>
+            <p class="role" style="color: #aaa; font-size: 1rem; margin-bottom: 2.5rem;" data-i18n="contactSub">تواصل معي عبر المنصات التالية</p>
+            
+            <div class="contact-grid">
+                <a href="https://www.instagram.com/solomyth1?igsh=cHN2ZjRwMGN6YzUx" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Instagram</h3>
+                        <p>@solomyth1</p>
+                    </div>
+                </a>
+                <a href="https://t.me/SoloMyth010" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Telegram</h3>
+                        <p>@SoloMyth010</p>
+                    </div>
+                </a>
+                <a href="mailto:solomyth010@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>solomyth010@gmail.com</p>
+                    </div>
+                </a>
+            </div>
+            <p style="color: #666; font-size: 0.9rem; margin-top: 2.5rem; border-top: 1px solid rgba(183,236,123,0.1); padding-top: 1.5rem;">
+                <i class="fas fa-check-circle" style="color: #B7EC7B;"></i> 
+                ولا يوجد أخرى
+            </p>
+        </div>
+    </div>
+
+    <!-- ===== الشريط السفلي ===== -->
+    <div class="bottom-nav">
+        <div class="nav-item active" data-target="home">
+            <div class="icon-box"><i class="fas fa-home"></i></div>
+            <span data-i18n="home">Home</span>
+        </div>
+        <div class="nav-item" data-target="skills">
+            <div class="icon-box"><i class="fas fa-code"></i></div>
+            <span data-i18n="skills">Skills</span>
+        </div>
+        <div class="nav-item" data-target="work">
+            <div class="icon-box"><i class="fas fa-briefcase"></i></div>
+            <span data-i18n="work">My Work</span>
+        </div>
+        <div class="nav-item" data-target="only">
+            <div class="icon-box"><i class="fas fa-lock"></i></div>
+            <span data-i18n="only">Only SoloMyth</span>
+        </div>
+        <div class="nav-item" data-target="contact">
+            <div class="icon-box"><i class="fas fa-paper-plane"></i></div>
+            <span data-i18n="contact">Contact</span>
+        </div>
+    </div>
+
+    <!-- ===== حقوق الطبع والنشر ===== -->
+    <div class="copyright">
+        <a href="https://www.instagram.com/grafora1?igsh=MTR6eDNsaGF6OW5mbw==" target="_blank" data-i18n="copyright">
+            made by milo
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
